@@ -18,6 +18,8 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) // Correcto para APIs
                 .authorizeHttpRequests(auth -> auth
+                        // Swagger
+                        .requestMatchers("/swagger-ui/**","/v3/api-docs/**","/swagger-ui.html").permitAll()
                         .requestMatchers("/auth/**").permitAll() // Debería dejar pasar a /auth/register
                         .anyRequest().authenticated()
                 )
