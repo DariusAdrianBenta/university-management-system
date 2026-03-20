@@ -3,8 +3,10 @@ package com.university.ums.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Entity
-@Table(name = "course")
+@Table(name = "courses")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -34,10 +36,8 @@ public class Course {
     @Enumerated(EnumType.STRING)
     private Semester semester;
 
-
     @Column(nullable = false)
     private Boolean active = true;
-
 
 
     //RELATIONSHIPS
@@ -51,7 +51,7 @@ public class Course {
     private Professor professor;
 
 @OneToMany(mappedBy = "course",fetch = FetchType.LAZY)
-    private List<Enrollment> enrollments,
+    private List<Enrollment> enrollments;
 
 
 }
