@@ -24,6 +24,7 @@ public class Professor {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
+    //RELATIONSHIPS
 
 //    @ManyToOne(fetch = FetchType.LAZY)
 //    @JoinColumn(name = "department _id")
