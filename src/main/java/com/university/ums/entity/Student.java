@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name = "students")
@@ -24,8 +25,8 @@ private boolean active;
     @JoinColumn(name = "user_id",nullable = false)
     private User user;
 
-//@OneToMany(mappedBy = "student",fetch = FetchType.LAZY)
-//    private List<Enrollment> enrollments;
+@OneToMany(mappedBy = "student",fetch = FetchType.LAZY)
+    private List<Enrollment> enrollments;
 
 
 
