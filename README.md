@@ -396,7 +396,7 @@ exception
 **DARIUS ADRIAN BENTA BURZA**  
 Backend Developer focused on **Java and Spring Boot**
 
-GitHub: https://github.com/DariusAdrianBenta
+GitHub: https://github.com/DariusAdrianBenta  
 LinkedIn: https://www.linkedin.com/in/dariusadrianbenta/
 
 ---
@@ -406,7 +406,7 @@ This project is part of my **backend development portfolio** and was built to de
 Through this project I showcase skills in:
 
 - REST API design
-- Secure authentication using **JWT**
+- Secure authentication and authorization using **JWT**
 - Layered architecture and clean code practices
 - Business logic implementation in the service layer
 - Database modeling with **JPA / Hibernate**
@@ -416,5 +416,16 @@ Through this project I showcase skills in:
 
 ---
 
-The goal of this project is to simulate a **real-world university management system backend**, implementing typical academic domain operations such as student enrollment, course management and academic evaluations.
-```
+The goal of this project is to simulate a **production-style university management system backend**, implementing real-world academic domain operations such as student enrollment, course management, and academic evaluations, with a focus on scalability, security, and maintainability.
+
+---
+
+# Key Learnings
+
+Through this project, I gained hands-on experience in:
+
+- Designing scalable and maintainable backend architectures
+- Implementing secure authentication and authorization using JWT
+- Structuring Spring Boot applications following clean architecture principles
+- Managing relational data using JPA and Hibernate
+- Applying best practices for clean code and separation of concerns
